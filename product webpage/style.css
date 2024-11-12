@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300");
+* {
+  margin: 0%;
+  padding: 0%;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product {
+  width: 90%;
+  display: flex;
+}
+.gallery {
+  transform: scale(1.08);
+}
+.gallery img {
+  width: 100%;
+  height: 490px;
+}
+.thumbnail img {
+  width: 60px;
+  height: 70px;
+  margin: 10px;
+  margin-bottom: 10px;
+}
+.details {
+  flex-basis: 55%;
+  background: whitesmoke;
+  padding: 40px;
+  padding-left: 60px;
+  margin-left: 15px;
+}
+.price {
+  margin-top: 10px;
+}
+h2 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+h5 {
+  color: grey;
+  margin-top: 2px;
+}
+h1 {
+  color: rgb(1, 1, 93);
+  margin-top: 2px;
+}
+h3 {
+  margin-top: 2px;
+  color: rgb(174, 56, 76);
+  font-size: 25px;
+}
+h2 {
+  font-size: 30px;
+}
+.color {
+  display: flex;
+}
+p {
+  margin: 10px;
+}
+.c1 {
+  width: 40px;
+  height: 40px;
+  background: pink;
+  border-radius: 60px;
+}
+.c2 {
+  width: 40px;
+  height: 40px;
+  background: rgb(163, 98, 224);
+  border-radius: 60px;
+}
+.c3 {
+  width: 40px;
+  height: 40px;
+  background: rgb(76, 183, 226);
+  border-radius: 60px;
+}
+.c4 {
+  width: 40px;
+  height: 40px;
+  background: black;
+  border-radius: 60px;
+}
+.c1::after {
+  content: "\2713"; /* Unicode for tick mark */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the tick mark */
+  color: black;
+  font-size: 20px;
+  opacity: 0; /* Initially hidden */
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked + .color::after {
+  opacity: 1; /* Show the tick mark when the radio button is checked */
+}
+.size {
+  margin-top: 20px;
+}
+h4 {
+  color: grey;
+  margin-top: 15px;
+}
+label.radio {
+  cursor: pointer;
+  margin: 10px;
+}
+label.radio input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+label.radio span {
+  padding: 2px 6px;
+  border: 2px solid rgb(6, 126, 126);
+  display: inline-block;
+  color: rgb(6, 126, 126);
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+label.radio input:checked + span {
+  border-color: rgb(6, 126, 126);
+  background-color: rgb(6, 126, 126);
+  color: #fff;
+}
+.inc {
+  width: 30px;
+  height: 20px;
+  background: grey;
+  color: white;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.dec {
+  width: 30px;
+  height: 20px;
+  background: grey;
+  color: white;
+  text-align: center;
+  margin: 0px;
+}
+#counting {
+  font-size: 20px;
+  margin-left: 8px;
+}
+.description {
+  font-weight: 100px;
+  margin-left: -5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.btn-container {
+  text-align: center;
+}
+
+button {
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  background: orangered;
+  border-radius: 50px;
+  border: none;
+  width: 500px;
+  height: 50px;
+  margin-top: 30px;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+.hidden {
+  display: none;
+}
+
+#btn4-text {
+  height: 40px;
+  color: black;
+  text-align: center;
+  line-height: 20px;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.popup-message {
+  animation: popup 3s forwards;
+}
+
+@keyframes popup {
+  0% {
+    transform: translateY(15%);
+    opacity: 0;
+  }
+  10%,
+  90% {
+    transform: none;
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(15%);
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+.color-picker {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.color-picker input[type="radio"] {
+  display: none;
+}
+
+.color-picker label {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.color-picker input[type="radio"]:checked + label {
+  border: 2px solid #000;
+}
+@media screen and (max-width: 767px) {
+  .gallery img {
+    width: 500px;
+    height: 600px;
+  }
+  .thumbnail img {
+    width: 70px;
+    height: 100px;
+    margin: 10px;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .gallery img {
+    width: 500px;
+    height: 600px;
+  }
+  .thumbnail img {
+    width: 70px;
+    height: 100px;
+    margin: 10px;
+    margin-bottom: 10px;
+  }
+}

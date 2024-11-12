@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
+    <title>Coding Assesment L2 boilerplate</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="product">
+            <div class="gallery"> 
+                <img id="main-image" src="product images/pic1.jpg" > 
+                <div class="thumbnail">
+                    <img onclick="change_image(this)" src="product images/pic1.jpg" >
+                    <img onclick="change_image(this)" src="product images/pic2.jpg" > 
+                    <img onclick="change_image(this)" src="product images/pic3.jpg" >
+                    <img onclick="change_image(this)" src="product images/pic4.jpg" >
+                    <img onclick="change_image(this)" src="product images/pic5.jpg">
+                   </div>
+            </div>
+                <div class="details">
+                    <h5>Marmeto</h5>
+                    <h2>Ethnic Dress with Dupatta</h2>
+                    <div class="price">
+                    <h1>$1299.00</h1>
+                    <h4 class="price"><s>$1999.00</s></h4><h3>35% Off</h3>
+                    <p class="description">Floral printed Georgette Anarkali Maxi Ethnic Dress With Dupatta is maxi-shaped,round-necked and comes with three-quater regular sleves.</p>
+                    <h4 class="price">Choose a Color</h4>
+                    <div class="color-picker">
+                        <input type="radio" id="color1" name="color" value="green">
+                        <label for="color1" style="background-color: green;"></label>
+                        
+                        <input type="radio" id="color2" name="color" value="skyblue">
+                        <label for="color2" style="background-color:skyblue;"></label>
+                        
+                        <input type="radio" id="color3" name="color" value="pink">
+                        <label for="color3" style="background-color:pink;"></label>
+                        
+                        <!-- Add more colors as needed -->
+                      </div>
+
+
+            <form>
+                <h4 class="text-uppercase">Choose your Size</h4>
+                 <label class="radio"> <input type="radio" name="size" value="S" checked> <span>S</span> </label> 
+                 <label class="radio"> <input type="radio" name="size" value="M"> <span>M</span> </label>
+                  <label class="radio"> <input type="radio" name="size" value="L"> <span>L</span> </label> 
+                  <label class="radio"> <input type="radio" name="size" value="XL"> <span>XL</span> </label> 
+                  <label class="radio"> <input type="radio" name="size" value="XXL"> <span>XXL</span> </label>
+            </form>
+            <div class="quantity-select">
+                <button class="inc" onclick="increment()">+</button>
+
+            <h2 id="counting"></h2>
+
+            <button class="dec" onclick="decrement()" >-</button>  
+            </div>
+            <div class="btn-container">
+                <button id="btn4">Add to Cart</button>
+              </div>
+              <p id="btn4-text" class="hidden">Added to Cart</p>
+        </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

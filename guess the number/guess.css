@@ -1,0 +1,72 @@
+body {
+  font-family: cursive;
+  background-color: #2c3a47;
+  color: white;
+  font-weight: bold;
+  margin: 30px;
+}
+.heading {
+  text-align: center;
+  color: #f7f1e3;
+}
+.title {
+  font-size: 60px;
+}
+.button {
+  padding: 10px;
+  width: max-content;
+  font-family: cursive;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 30px;
+  margin-left: 60px;
+  background: #f7f1e3;
+  border: solid 2px #f7f1e3;
+  border-radius: 20px;
+}
+.again {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 30px;
+}
+.secret {
+  width: 10%;
+  height: 80px;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+  font-size: 60px;
+  border: solid #f7f1e3 2px;
+  border-radius: 100%;
+}
+.inputblock {
+  float: left;
+  margin: 20px;
+  margin-top: 20px;
+  margin-left: 100px;
+}
+.input {
+  text-align: center;
+  height: 50px;
+  margin-top: 40px;
+  color: black;
+  background: #f7f1e3;
+  padding: 20px;
+  border: solid #f7f1e3 2px;
+  font-size: 20px;
+  width: fit-content;
+  border: solid #f7f1e3 2px;
+  border-radius: 10px;
+}
+.output {
+  float: right;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-right: 150px;
+  color: #f7f1e3;
+}
+.message {
+  font-size: 40px;
+}

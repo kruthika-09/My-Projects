@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+body {
+  font-family: Montserrat;
+  background-image: url("https://img.freepik.com/premium-photo/stock-market-forex-trading-graph-trading-investment-concept-blue-red-line_161452-12179.jpg?w=900");
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(4px);
+  background-position: center;
+  backdrop-filter: brightness(55%);
+  height: 570px;
+}
+.mainSection {
+  display: flex;
+}
+h1 {
+  margin: 0px;
+  font-family: Playfair Display;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 31.72px;
+  letter-spacing: -0.015em;
+  color: lightblue;
+  text-align: center;
+}
+.inputContainer {
+  margin: 0px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  width: 50%;
+  height: 400px;
+  display: grid;
+  align-items: center;
+}
+label,
+input {
+  font-size: 20px;
+  margin: 0px;
+  font-weight: 500;
+  margin-left: 20px;
+  color: white;
+  font-weight: 500;
+  z-index: 2;
+}
+label {
+  width: 250px;
+}
+input {
+  background: none;
+  border: 1px solid white;
+  width: 250px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input:focus {
+  outline: none;
+}
+.calculate {
+  width: 150px;
+  height: 40px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  border: none;
+  background: #18a0fb;
+  font-size: 20px;
+  color: aliceblue;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  border-radius: 5px;
+}
+.calculate:hover {
+  color: rgb(2, 28, 65);
+}
+.calculate:focus {
+  outline: none;
+}
+.dropdown {
+  width: 150px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  background: none;
+  margin-left: 30px;
+  border: 1px solid white;
+  color: white;
+  background: none;
+}
+.dropdown:focus {
+  color: black;
+  border: none;
+}
+.outputContainer {
+  margin-bottom: 40px;
+  margin-top: 40px;
+  margin-right: 20px;
+  width: 50%;
+  height: 400px;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+}
+.output {
+  margin: 20px;
+  font-size: 20px;
+}
+.close {
+  float: right;
+  margin-left: 20px;
+  background-color: transparent;
+  border: none;
+  color: black;
+  font-size: 30px;
+  cursor: pointer;
+  position: relative;
+  padding: 0;
+  transition: color 0.3s ease;
+}
+.close:hover {
+  color: #ff0000;
+}
+.close:focus {
+  outline: none;
+}
+
+.heading {
+  font-family: Playfair Display;
+  color: lightblue;
+  font-size: 30px;
+}
+.spinner-border {
+  position: absolute;
+  margin-top: 180px;
+  margin-left: 20px;
+}
+.hidden {
+  visibility: hidden;
+}
+.profit-loss {
+  display: flex;
+}
+@media (max-width: 770px) {
+  body {
+    font-size: 14px;
+    backdrop-filter: brightness(55%);
+    width: fit-content;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .inputContainer {
+    margin: 10px;
+    width: 90%;
+    height: auto;
+  }
+
+  .calculate {
+    width: fit-content;
+  }
+
+  .outputContainer {
+    width: 90%;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    font-size: 10px;
+    width: fit-content;
+    backdrop-filter: brightness(55%);
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .inputContainer {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 90%;
+    height: auto;
+  }
+  .calculate {
+    width: fit-content;
+  }
+
+  .outputContainer {
+    margin-top: 20px;
+    width: 90%;
+  }
+}

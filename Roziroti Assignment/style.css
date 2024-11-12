@@ -1,0 +1,129 @@
+
+.head{
+    font-size: 30px;
+    font-family: "futura-pt", sans-serif;
+    font-weight: 1px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+.subhead{
+    text-align: center;
+    color: grey;
+    margin-top: 0px;
+    font-size: 15px;
+}
+.logo{
+    margin: 0px;
+}
+ul{
+    list-style-type: none;
+}
+.nav a{
+    color: black;
+    text-decoration: none;
+    
+}
+.normal{
+    margin-left: 400px;
+}
+.righ{
+    float: right;
+    margin: 30px;
+}
+.left{
+    float: left;
+    margin: 30px;
+}
+.button{
+    color: #fff;
+    background-color: #c15627;
+    border-radius: 30px;
+    padding: 5px 13px;
+}
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    text-align: center;
+}
+.content h1{
+    font-size: 100px;
+    color: #fff;
+    font-family: "F37 Caslon", serif;
+    font-weight: lighter;
+}
+.container video{
+    margin: 0px;
+    z-index: -1;
+    right: 0;
+    left: 0;
+    position: absolute;
+    margin-top: 500px;
+}
+@media (min-aspect-ratio:16/9){
+    .video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio:16/9){
+    .video{
+        width: auto;
+        height: 100%;
+    }
+}
+.dropdown{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+.dropdown ul{
+    display: block;
+    margin: 10px;
+}
+.menu ul{
+    display: flex;
+    text-align: center;
+}
+.toggle{
+   position: absolute;
+    top: 12px;
+    right: 16px;
+    display: none;
+}
+@media (max-width:1200px){
+    .toggle{
+        display: block;
+    }
+    .menu{
+        display: none;
+        width: 100%;
+    }
+    .nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .menu ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    .menu ul li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(2, 36, 2);
+    }
+    .menu ul li a{
+        padding:8px 16px;
+    }
+    .menu.active{
+        display: block;
+    }
+}
+
