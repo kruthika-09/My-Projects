@@ -1,74 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
-    <title>Coding Assesment L2 boilerplate</title>
+    <title>webpage</title>
+    <script defer src="./script.js"></script>
+  </head>
 
-</head>
-
-<body>
-    <div class="container">
-        <div class="product">
-            <div class="gallery"> 
-                <img id="main-image" src="product images/pic1.jpg" > 
-                <div class="thumbnail">
-                    <img onclick="change_image(this)" src="product images/pic1.jpg" >
-                    <img onclick="change_image(this)" src="product images/pic2.jpg" > 
-                    <img onclick="change_image(this)" src="product images/pic3.jpg" >
-                    <img onclick="change_image(this)" src="product images/pic4.jpg" >
-                    <img onclick="change_image(this)" src="product images/pic5.jpg">
-                   </div>
-            </div>
-                <div class="details">
-                    <h5>Marmeto</h5>
-                    <h2>Ethnic Dress with Dupatta</h2>
-                    <div class="price">
-                    <h1>$1299.00</h1>
-                    <h4 class="price"><s>$1999.00</s></h4><h3>35% Off</h3>
-                    <p class="description">Floral printed Georgette Anarkali Maxi Ethnic Dress With Dupatta is maxi-shaped,round-necked and comes with three-quater regular sleves.</p>
-                    <h4 class="price">Choose a Color</h4>
-                    <div class="color-picker">
-                        <input type="radio" id="color1" name="color" value="green">
-                        <label for="color1" style="background-color: green;"></label>
-                        
-                        <input type="radio" id="color2" name="color" value="skyblue">
-                        <label for="color2" style="background-color:skyblue;"></label>
-                        
-                        <input type="radio" id="color3" name="color" value="pink">
-                        <label for="color3" style="background-color:pink;"></label>
-                        
-                        <!-- Add more colors as needed -->
-                      </div>
-
-
-            <form>
-                <h4 class="text-uppercase">Choose your Size</h4>
-                 <label class="radio"> <input type="radio" name="size" value="S" checked> <span>S</span> </label> 
-                 <label class="radio"> <input type="radio" name="size" value="M"> <span>M</span> </label>
-                  <label class="radio"> <input type="radio" name="size" value="L"> <span>L</span> </label> 
-                  <label class="radio"> <input type="radio" name="size" value="XL"> <span>XL</span> </label> 
-                  <label class="radio"> <input type="radio" name="size" value="XXL"> <span>XXL</span> </label>
-            </form>
-            <div class="quantity-select">
-                <button class="inc" onclick="increment()">+</button>
-
-            <h2 id="counting"></h2>
-
-            <button class="dec" onclick="decrement()" >-</button>  
-            </div>
-            <div class="btn-container">
-                <button id="btn4">Add to Cart</button>
-              </div>
-              <p id="btn4-text" class="hidden">Added to Cart</p>
+  <body>
+    <section class="page">
+        <img class="logo" src="https://t3.ftcdn.net/jpg/04/83/17/70/360_F_483177006_EYf1HAEoA6uGoTVwPMSdstDl8LIRccBp.jpg">
+      <section class="product">
+        <div class="images">
+          <img
+            class="main-image"
+            src="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/2024/SEPTEMBER/17/NyO22Fg2_555534e609e945d1b09671c557271330.jpg"
+          />
+          <div class="thumbnail">
+            <img
+              onclick="change_image(this)"
+              src="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/2024/SEPTEMBER/17/NyO22Fg2_555534e609e945d1b09671c557271330.jpg"
+            />
+            <img
+              onclick="change_image(this)"
+              src="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/2024/SEPTEMBER/17/gMrxGLrC_efd22ab8683c4784898c64bf22238633.jpg"
+            />
+            <img
+              onclick="change_image(this)"
+              src="https://www.inddus.com/cdn/shop/files/IKD-1047-DR_6.jpg?v=1731148032"
+            />
+          </div>
         </div>
+      </section>
+      <section class="details">
+        <h2>Girls Embroidered A-Line Maxi Ethnic Dress</h2>
+        <div class="price">
+        <p class="originalPrice"><s>Rs 1999.00</s></p>
+          <p class="dealTag">Limited time deal</p>
+          <div class="offer">
+            <p class="offerPercentage">35% Off</p>
+            <p>Rs 1299.00</p>
+          </div>
         </div>
-    </div>
 
-    <script src="./script.js"></script>
-</body>
-
+        <div class="sizeSelection">
+            <h4 class="chooseSize">Choose your Size:</h4>
+          <form>
+            <label class="radio">
+              <input type="radio" name="size" value="S" checked />
+              <span>S</span>
+            </label>
+            <label class="radio">
+              <input type="radio" name="size" value="M" /> <span>M</span>
+            </label>
+            <label class="radio">
+              <input type="radio" name="size" value="L" /> <span>L</span>
+            </label>
+            <label class="radio">
+              <input type="radio" name="size" value="XL" /> <span>XL</span>
+            </label>
+            <label class="radio">
+              <input type="radio" name="size" value="XXL" /> <span>XXL</span>
+            </label>
+          </form>
+        </div>
+        <p class="chooseQuantity">Quantity:</p>
+        <div class="quantity-select">
+          <button class="dec" onclick=decrement()>-</button>
+          <p class="counting"> </p>
+          <button class="inc" onclick=increment()>+</button>
+        </div>
+        <div class="cart">
+          <button class="cartButton">Add to Cart</button>
+          <p class="popupText hidden"> ✅ Added to Cart Successfully</p>
+        </div>
+        <div class="productDescription">
+            <details>
+                <summary>Description</summary>
+                <p>
+                    This black ethnic dress is perfect for girls with its embroidered
+                    design and A-line shape. The V-neck and long sleeves add a touch of
+                    elegance while the flared hem allows for comfortable movement. Slip
+                    on this dress for a stylish and effortless look.
+                    <p>Material & Care</p>
+                    <p>Top: Georgette</p>
+                    <p>Top inner:Crepe</p>
+                    <p>DryClean</p>
+                </p>
+            </details>
+        </div>
+      </section>
+    </section>
+  </body>
 </html>
