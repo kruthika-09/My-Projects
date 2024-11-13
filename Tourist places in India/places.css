@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  display: flex;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.background-image {
+  width: 1200px;
+  height: 537px;
+  filter: blur(7px);
+}
+.head {
+  position: absolute;
+}
+.button {
+  font-size: large;
+  padding: 10px;
+  border: none;
+  margin: 20px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  background: none;
+}
+.button:hover {
+  cursor: pointer;
+}
+.image {
+  width: 500px;
+  height: 300px;
+  margin: 30px;
+}
+.container {
+  width: 50%;
+  background: rgb(185, 221, 234);
+  color: black;
+  font-family: Montserrat;
+  font-size: 15px;
+  border-radius: 10px;
+  position: absolute;
+  text-align: center;
+}
+.description {
+  margin: 10px 40px 30px 40px;
+  width: 500px;
+}
+.close {
+  float: right;
+  border: none;
+  font-size: 20px;
+  font-weight: bolder;
+  border-radius: 100%;
+  background: none;
+  margin: 10px 10px 0px 0px;
+}
+.close:hover {
+  cursor: pointer;
+}
+.hidden {
+  visibility: hidden;
+}
